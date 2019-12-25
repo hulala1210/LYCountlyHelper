@@ -7,7 +7,7 @@
 //
 
 #import "LYCountlyHelper.h"
-#import <Countly.h>
+#import "Countly.h"
 #import "CountlyConnectionManager+CustomConnection.h"
 #import "LYCountlyHooker.h"
 #import "LYCountlyEventDistributor.h"
