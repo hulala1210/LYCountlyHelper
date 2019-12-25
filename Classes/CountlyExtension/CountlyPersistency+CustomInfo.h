@@ -6,7 +6,7 @@
 //  Copyright © 2019 appscomm. All rights reserved.
 //
 
-NS_ASSUME_NONNULL_BEGIN
+#import <UIKit/UIKit.h>
 
 @interface CountlyPersistency : NSObject
 
@@ -31,4 +31,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_ASSUME_NONNULL_END

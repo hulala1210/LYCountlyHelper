@@ -7,7 +7,6 @@
 //
 
 #import "CountlyConnectionManager+CustomConnection.h"
-#import "NetworkManager.h"
 #import "CountlyExtensions.h"
 #import "CountlyDeviceInfo+CustomInfo.h"
 #import <YYKit.h>

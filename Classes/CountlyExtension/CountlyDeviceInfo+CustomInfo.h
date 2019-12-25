@@ -6,6 +6,8 @@
 //  Copyright © 2019 appscomm. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 @interface CountlyDeviceInfo : NSObject
 
 @end

@@ -7,8 +7,7 @@
 //
 
 
-NS_ASSUME_NONNULL_BEGIN
-
+#import <UIKit/UIKit.h>
 @interface CountlyEvent : NSObject
 
 @end
@@ -17,7 +16,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSDictionary *)dictionaryRepresentation;
 
-
 @end
-
-NS_ASSUME_NONNULL_END
