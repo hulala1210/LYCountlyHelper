@@ -9,13 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "LYCountlyCustomConfig.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
 @protocol LYCountlyEventDistributionProtocol;
 
 @interface LYCountlyHelper : NSObject
 
-@property (strong, nonatomic, class) LYCountlyCustomConfig *customConfig;
+//@property (strong, nonatomic, class) LYCountlyCustomConfig *customConfig;
 
 + (void)startWithConfig:(LYCountlyCustomConfig *)config delegate:(id <LYCountlyEventDistributionProtocol>)delegate;
 
@@ -44,4 +42,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_ASSUME_NONNULL_END

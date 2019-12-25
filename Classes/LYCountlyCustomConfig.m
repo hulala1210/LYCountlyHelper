@@ -10,5 +10,14 @@
 
 @implementation LYCountlyCustomConfig
 
+static LYCountlyCustomConfig *staticCustomConfig;
+
++ (LYCountlyCustomConfig *)currentConfig {
+    return staticCustomConfig;
+}
+
++ (void)setCurrentConfig:(LYCountlyCustomConfig *)currentConfig {
+    staticCustomConfig = currentConfig;
+}
 
 @end

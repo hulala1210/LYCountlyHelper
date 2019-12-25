@@ -16,23 +16,14 @@
 
 @end
 
-static LYCountlyCustomConfig *staticCustomConfig;
 
 @implementation LYCountlyHelper
-
-+ (LYCountlyCustomConfig *)customConfig {
-    return staticCustomConfig;
-}
-
-+ (void)setCustomConfig:(LYCountlyCustomConfig *)customConfig {
-    staticCustomConfig = customConfig;
-}
 
 + (void)startWithConfig:(LYCountlyCustomConfig *)config delegate:(nonnull id<LYCountlyEventDistributionProtocol>)delegate {
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        self.customConfig = config;
+        LYCountlyCustomConfig.currentConfig = config;
 
         CountlyConfig *countlyConfig = [[CountlyConfig alloc] init];
         countlyConfig.appKey = config.appKey;
@@ -60,12 +51,12 @@ static LYCountlyCustomConfig *staticCustomConfig;
 }
 
 + (void)userLoggedIn:(NSString *)userID {
-    [self customConfig].userId = userID;
+    [LYCountlyCustomConfig currentConfig].userId = userID;
     [[Countly sharedInstance] userLoggedIn:userID];
 }
 
 + (void)userLoggedOut {
-    [self customConfig].userId = nil;
+    [LYCountlyCustomConfig currentConfig].userId = nil;
     [[Countly sharedInstance] userLoggedOut];
 }
 

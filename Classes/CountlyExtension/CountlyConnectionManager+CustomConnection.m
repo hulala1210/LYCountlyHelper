@@ -10,7 +10,7 @@
 #import "CountlyExtensions.h"
 #import "CountlyDeviceInfo+CustomInfo.h"
 #import "YYKit.h"
-#import "LYCountlyHelper.h"
+#import "LYCountlyCustomConfig.h"
 
 static NSString const *kCustomCountlyQSKeyAppKey = @"appKey";
 static NSString const *kCustomCountlyQSKeyAppName = @"appName";
@@ -224,11 +224,11 @@ static void * customConfigKey = "customConfigKey";
                                         kCountlyQSKeyTimeZone, (int)CountlyCommon.sharedInstance.timeZone,
                                         kCustomCountlyQSKeySDKVersion, kCountlySDKVersion,
                                         kCustomCountlyQSKeySDKName, kCountlySDKName,
-                                        kCustomCountlyQSKeyAppName, [LYCountlyHelper customConfig].appName,
+                                        kCustomCountlyQSKeyAppName, [LYCountlyCustomConfig currentConfig].appName,
                                         kCustomCountlyQSKeyPhoneId, idfv];
     
-    if ([LYCountlyHelper.customConfig.userId length]) {
-        essential = [essential stringByAppendingFormat:@"&%@=%@",kCustomCountlyQSKeyUserId, LYCountlyHelper.customConfig.userId];
+    if ([LYCountlyCustomConfig.currentConfig.userId length]) {
+        essential = [essential stringByAppendingFormat:@"&%@=%@",kCustomCountlyQSKeyUserId, LYCountlyCustomConfig.currentConfig.userId];
     }
     
     essential = [essential stringByAppendingFormat:@"&%@=%@",kCustomCountlyQSKeySeq, [self generateSeq]];

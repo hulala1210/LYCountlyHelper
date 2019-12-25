@@ -11,6 +11,8 @@
 
 @interface LYCountlyCustomConfig : NSObject
 
+@property (strong, nonatomic, class) LYCountlyCustomConfig *currentConfig;
+
 @property (strong, nonatomic) NSString *channel;
 @property (strong, nonatomic) NSString *appName;
 @property (strong, nonatomic) NSString *userId;
@@ -38,7 +40,6 @@
  */
 @property (nonatomic) NSUInteger storedRequestsLimit;
 
-+ (LYCountlyCustomConfig *)defaultConfig;
 
 @end
 
