@@ -1,0 +1,24 @@
+PODS:
+  - Countly (19.08):
+    - Countly/NotificationService (= 19.08)
+  - Countly/NotificationService (19.08)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - Countly (~> 19.08)
+  - YYKit (~> 1.0.9)
+
+SPEC REPOS:
+  trunk:
+    - Countly
+    - YYKit
+
+SPEC CHECKSUMS:
+  Countly: 7c596e00a90a35b7978713a384455fe9a18f28aa
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 4ed3027b8ac5207aaf6b9a2425f85bc55455ab55
+
+COCOAPODS: 1.8.4
