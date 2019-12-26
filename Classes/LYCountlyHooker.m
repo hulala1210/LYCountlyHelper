@@ -7,7 +7,7 @@
 //
 
 #import "LYCountlyHooker.h"
-#import "YYKit.h"
+#import <YYKit/YYKit.h>
 #import "UITableViewDelegateProxy.h"
 #import "UICollectionViewDelegateProxy.h"
 #import "LYCountlyUIControlAction.h"
