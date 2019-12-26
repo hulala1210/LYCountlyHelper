@@ -8,7 +8,7 @@
 
 #import "LYCountlyHelper.h"
 #import "Countly.h"
-#import "CountlyConnectionManager+CustomConnection.h"
+//#import "CountlyConnectionManager+CustomConnection.h"
 #import "LYCountlyHooker.h"
 #import "LYCountlyEventDistributor.h"
 
@@ -20,34 +20,34 @@
 @implementation LYCountlyHelper
 
 + (void)startWithConfig:(LYCountlyCustomConfig *)config delegate:(nonnull id<LYCountlyEventDistributionProtocol>)delegate {
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        LYCountlyCustomConfig.currentConfig = config;
-
-        CountlyConfig *countlyConfig = [[CountlyConfig alloc] init];
-        countlyConfig.appKey = config.appKey;
-        countlyConfig.host = config.host;
-        
-        countlyConfig.customHeaderFieldName = @"Content-Type";
-        countlyConfig.customHeaderFieldValue = @"application/json";
-        
-        countlyConfig.updateSessionPeriod = config.updateSessionPeriod;
-        countlyConfig.eventSendThreshold = config.eventSendThreshold;
-        
-        countlyConfig.storedRequestsLimit = config.storedRequestsLimit;
-        
-        countlyConfig.alwaysUsePOST = YES;
-        
-        // 是否在begin Session方法中上报IDFA
-        countlyConfig.enableAttribution = NO;
-
-        [Countly.sharedInstance setCustomHeaderFieldValue:@"application/json"];
-        [Countly.sharedInstance startWithConfig:countlyConfig];
-        [LYCountlyHooker hook];
-        
-        [LYCountlyEventDistributor sharedInstance].delegate = delegate;
-    });
+//
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        LYCountlyCustomConfig.currentConfig = config;
+//
+//        CountlyConfig *countlyConfig = [[CountlyConfig alloc] init];
+//        countlyConfig.appKey = config.appKey;
+//        countlyConfig.host = config.host;
+//
+//        countlyConfig.customHeaderFieldName = @"Content-Type";
+//        countlyConfig.customHeaderFieldValue = @"application/json";
+//
+//        countlyConfig.updateSessionPeriod = config.updateSessionPeriod;
+//        countlyConfig.eventSendThreshold = config.eventSendThreshold;
+//
+//        countlyConfig.storedRequestsLimit = config.storedRequestsLimit;
+//
+//        countlyConfig.alwaysUsePOST = YES;
+//
+//        // 是否在begin Session方法中上报IDFA
+//        countlyConfig.enableAttribution = NO;
+//
+//        [Countly.sharedInstance setCustomHeaderFieldValue:@"application/json"];
+//        [Countly.sharedInstance startWithConfig:countlyConfig];
+//        [LYCountlyHooker hook];
+//
+//        [LYCountlyEventDistributor sharedInstance].delegate = delegate;
+//    });
 }
 
 + (void)userLoggedIn:(NSString *)userID {

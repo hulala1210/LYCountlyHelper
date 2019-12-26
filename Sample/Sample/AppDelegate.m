@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LYCountlyHelper.h"
+#import "DataCollector.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    LYCountlyCustomConfig *config = [[LYCountlyCustomConfig alloc] init];
+    config.appKey = @"e3293452c1306ed1808b5d7e0148bf88";
+    config.host = @"https://testnew.appscomm.cn/countly/api/v1/contents";
+    config.appName = @"3plus-helio";
+    
+    config.updateSessionPeriod = 300;
+    config.eventSendThreshold = 3;
+    
+    config.storedRequestsLimit = 5000;
+
+    [LYCountlyHelper startWithConfig:config delegate:[DataCollector sharedInstance]];
+    
     return YES;
 }
 

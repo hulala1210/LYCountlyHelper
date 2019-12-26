@@ -15,10 +15,6 @@
 		E2519F4B23B3C0E9000E36DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2519F4A23B3C0E9000E36DC /* Assets.xcassets */; };
 		E2519F4E23B3C0E9000E36DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2519F4C23B3C0E9000E36DC /* LaunchScreen.storyboard */; };
 		E2519F5123B3C0E9000E36DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F5023B3C0E9000E36DC /* main.m */; };
-		E2519F9C23B3C212000E36DC /* CountlyPersistency+CustomInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F8123B3C212000E36DC /* CountlyPersistency+CustomInfo.m */; };
-		E2519F9D23B3C212000E36DC /* CountlyDeviceInfo+CustomInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F8523B3C212000E36DC /* CountlyDeviceInfo+CustomInfo.m */; };
-		E2519F9E23B3C212000E36DC /* CountlyConnectionManager+CustomConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F8923B3C212000E36DC /* CountlyConnectionManager+CustomConnection.m */; };
-		E2519F9F23B3C212000E36DC /* CountlyEvent+CustomInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F8C23B3C212000E36DC /* CountlyEvent+CustomInfo.m */; };
 		E2519FA023B3C212000E36DC /* LYCountlyHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F8D23B3C212000E36DC /* LYCountlyHooker.m */; };
 		E2519FA123B3C212000E36DC /* LYCountlyUIControlAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F9023B3C212000E36DC /* LYCountlyUIControlAction.m */; };
 		E2519FA223B3C212000E36DC /* UITableViewDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F9423B3C212000E36DC /* UITableViewDelegateProxy.m */; };
@@ -26,6 +22,7 @@
 		E2519FA423B3C212000E36DC /* LYCountlyEventDistributor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F9823B3C212000E36DC /* LYCountlyEventDistributor.m */; };
 		E2519FA523B3C212000E36DC /* LYCountlyCustomConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F9923B3C212000E36DC /* LYCountlyCustomConfig.m */; };
 		E2519FA623B3C212000E36DC /* LYCountlyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F9B23B3C212000E36DC /* LYCountlyHelper.m */; };
+		E2942B5823B3E0C900F253B7 /* DataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B5623B3E0C800F253B7 /* DataCollector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,18 +41,6 @@
 		E2519F4D23B3C0E9000E36DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2519F4F23B3C0E9000E36DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2519F5023B3C0E9000E36DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E2519F8123B3C212000E36DC /* CountlyPersistency+CustomInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountlyPersistency+CustomInfo.m"; sourceTree = "<group>"; };
-		E2519F8223B3C212000E36DC /* CountlyCommon+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyCommon+Extension.h"; sourceTree = "<group>"; };
-		E2519F8323B3C212000E36DC /* CountlyConnectionManager+CustomConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyConnectionManager+CustomConnection.h"; sourceTree = "<group>"; };
-		E2519F8423B3C212000E36DC /* CountlyEvent+CustomInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyEvent+CustomInfo.h"; sourceTree = "<group>"; };
-		E2519F8523B3C212000E36DC /* CountlyDeviceInfo+CustomInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountlyDeviceInfo+CustomInfo.m"; sourceTree = "<group>"; };
-		E2519F8623B3C212000E36DC /* CountlyConsentManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyConsentManager+Extension.h"; sourceTree = "<group>"; };
-		E2519F8723B3C212000E36DC /* CountlyPersistency+CustomInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyPersistency+CustomInfo.h"; sourceTree = "<group>"; };
-		E2519F8823B3C212000E36DC /* CountlyLocationManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyLocationManager+Extension.h"; sourceTree = "<group>"; };
-		E2519F8923B3C212000E36DC /* CountlyConnectionManager+CustomConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountlyConnectionManager+CustomConnection.m"; sourceTree = "<group>"; };
-		E2519F8A23B3C212000E36DC /* CountlyExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountlyExtensions.h; sourceTree = "<group>"; };
-		E2519F8B23B3C212000E36DC /* CountlyDeviceInfo+CustomInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyDeviceInfo+CustomInfo.h"; sourceTree = "<group>"; };
-		E2519F8C23B3C212000E36DC /* CountlyEvent+CustomInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountlyEvent+CustomInfo.m"; sourceTree = "<group>"; };
 		E2519F8D23B3C212000E36DC /* LYCountlyHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCountlyHooker.m; sourceTree = "<group>"; };
 		E2519F8E23B3C212000E36DC /* LYCountlyEventDistributionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCountlyEventDistributionProtocol.h; sourceTree = "<group>"; };
 		E2519F8F23B3C212000E36DC /* UICollectionViewDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewDelegateProxy.h; sourceTree = "<group>"; };
@@ -71,6 +56,8 @@
 		E2519F9923B3C212000E36DC /* LYCountlyCustomConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCountlyCustomConfig.m; sourceTree = "<group>"; };
 		E2519F9A23B3C212000E36DC /* UITableViewDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewDelegateProxy.h; sourceTree = "<group>"; };
 		E2519F9B23B3C212000E36DC /* LYCountlyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCountlyHelper.m; sourceTree = "<group>"; };
+		E2942B5623B3E0C800F253B7 /* DataCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCollector.m; sourceTree = "<group>"; };
+		E2942B5723B3E0C800F253B7 /* DataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCollector.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +117,7 @@
 				E2519F4223B3C0E6000E36DC /* SceneDelegate.m */,
 				E2519F4423B3C0E6000E36DC /* ViewController.h */,
 				E2519F4523B3C0E6000E36DC /* ViewController.m */,
+				E2942B5523B3E0C800F253B7 /* AOPCountly */,
 				E2519F4723B3C0E6000E36DC /* Main.storyboard */,
 				E2519F4A23B3C0E9000E36DC /* Assets.xcassets */,
 				E2519F4C23B3C0E9000E36DC /* LaunchScreen.storyboard */,
@@ -142,7 +130,6 @@
 		E2519F7F23B3C212000E36DC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E2519F8023B3C212000E36DC /* CountlyExtension */,
 				E2519F8D23B3C212000E36DC /* LYCountlyHooker.m */,
 				E2519F8E23B3C212000E36DC /* LYCountlyEventDistributionProtocol.h */,
 				E2519F8F23B3C212000E36DC /* UICollectionViewDelegateProxy.h */,
@@ -163,23 +150,13 @@
 			path = ../../Classes;
 			sourceTree = "<group>";
 		};
-		E2519F8023B3C212000E36DC /* CountlyExtension */ = {
+		E2942B5523B3E0C800F253B7 /* AOPCountly */ = {
 			isa = PBXGroup;
 			children = (
-				E2519F8123B3C212000E36DC /* CountlyPersistency+CustomInfo.m */,
-				E2519F8223B3C212000E36DC /* CountlyCommon+Extension.h */,
-				E2519F8323B3C212000E36DC /* CountlyConnectionManager+CustomConnection.h */,
-				E2519F8423B3C212000E36DC /* CountlyEvent+CustomInfo.h */,
-				E2519F8523B3C212000E36DC /* CountlyDeviceInfo+CustomInfo.m */,
-				E2519F8623B3C212000E36DC /* CountlyConsentManager+Extension.h */,
-				E2519F8723B3C212000E36DC /* CountlyPersistency+CustomInfo.h */,
-				E2519F8823B3C212000E36DC /* CountlyLocationManager+Extension.h */,
-				E2519F8923B3C212000E36DC /* CountlyConnectionManager+CustomConnection.m */,
-				E2519F8A23B3C212000E36DC /* CountlyExtensions.h */,
-				E2519F8B23B3C212000E36DC /* CountlyDeviceInfo+CustomInfo.h */,
-				E2519F8C23B3C212000E36DC /* CountlyEvent+CustomInfo.m */,
+				E2942B5623B3E0C800F253B7 /* DataCollector.m */,
+				E2942B5723B3E0C800F253B7 /* DataCollector.h */,
 			);
-			path = CountlyExtension;
+			path = AOPCountly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +263,9 @@
 				E2519FA223B3C212000E36DC /* UITableViewDelegateProxy.m in Sources */,
 				E2519FA623B3C212000E36DC /* LYCountlyHelper.m in Sources */,
 				E2519FA523B3C212000E36DC /* LYCountlyCustomConfig.m in Sources */,
-				E2519F9D23B3C212000E36DC /* CountlyDeviceInfo+CustomInfo.m in Sources */,
-				E2519F9E23B3C212000E36DC /* CountlyConnectionManager+CustomConnection.m in Sources */,
 				E2519F4323B3C0E6000E36DC /* SceneDelegate.m in Sources */,
+				E2942B5823B3E0C900F253B7 /* DataCollector.m in Sources */,
 				E2519FA323B3C212000E36DC /* UICollectionViewDelegateProxy.m in Sources */,
-				E2519F9F23B3C212000E36DC /* CountlyEvent+CustomInfo.m in Sources */,
-				E2519F9C23B3C212000E36DC /* CountlyPersistency+CustomInfo.m in Sources */,
 				E2519FA123B3C212000E36DC /* LYCountlyUIControlAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
