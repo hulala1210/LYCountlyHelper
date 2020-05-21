@@ -2,12 +2,16 @@ PODS:
   - Countly (19.08):
     - Countly/NotificationService (= 19.08)
   - Countly/NotificationService (19.08)
+  - LYCountlyHelper (1.0.0):
+    - Countly (~> 19.08)
+    - YYKit
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - Countly (~> 19.08)
+  - LYCountlyHelper (from `../`)
   - YYKit (~> 1.0.9)
 
 SPEC REPOS:
@@ -15,10 +19,15 @@ SPEC REPOS:
     - Countly
     - YYKit
 
+EXTERNAL SOURCES:
+  LYCountlyHelper:
+    :path: "../"
+
 SPEC CHECKSUMS:
   Countly: 7c596e00a90a35b7978713a384455fe9a18f28aa
+  LYCountlyHelper: bae4c0c564bbb52ef51f385854bf081d3c49ee30
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 4ed3027b8ac5207aaf6b9a2425f85bc55455ab55
+PODFILE CHECKSUM: 363948c88715135ffa24c6409270f48f4a900259
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

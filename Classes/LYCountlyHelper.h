@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LYCountlyCustomConfig.h"
-#import "LYCountlyUIControlAction.h"
+#import "LYCountlyEventDistributionProtocol.h"
 
 @protocol LYCountlyEventDistributionProtocol;
 

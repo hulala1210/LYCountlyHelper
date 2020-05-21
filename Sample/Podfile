@@ -11,5 +11,6 @@ target 'Sample' do
 
   pod 'Countly', '~> 19.08'
   pod 'YYKit', '~>1.0.9'
+  pod 'LYCountlyHelper', :path => '../'
 
 end

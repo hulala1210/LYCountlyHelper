@@ -16,17 +16,6 @@
 		E2519F4E23B3C0E9000E36DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2519F4C23B3C0E9000E36DC /* LaunchScreen.storyboard */; };
 		E2519F5123B3C0E9000E36DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2519F5023B3C0E9000E36DC /* main.m */; };
 		E2942B5823B3E0C900F253B7 /* DataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B5623B3E0C800F253B7 /* DataCollector.m */; };
-		E2942B7523B4ACB900F253B7 /* LYCountlyEventDistributor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B5C23B4ACB800F253B7 /* LYCountlyEventDistributor.m */; };
-		E2942B7623B4ACB900F253B7 /* LYCountlyCustomConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B5D23B4ACB800F253B7 /* LYCountlyCustomConfig.m */; };
-		E2942B7723B4ACB900F253B7 /* LYCountlyUIControlAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B5E23B4ACB800F253B7 /* LYCountlyUIControlAction.m */; };
-		E2942B7823B4ACB900F253B7 /* UICollectionViewDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B5F23B4ACB800F253B7 /* UICollectionViewDelegateProxy.m */; };
-		E2942B7D23B4ACB900F253B7 /* LYCountlyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B6D23B4ACB900F253B7 /* LYCountlyHelper.m */; };
-		E2942B7E23B4ACB900F253B7 /* LYCountlyHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B7223B4ACB900F253B7 /* LYCountlyHooker.m */; };
-		E2942B7F23B4ACB900F253B7 /* UITableViewDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B7323B4ACB900F253B7 /* UITableViewDelegateProxy.m */; };
-		E2942B8C23B4ACC700F253B7 /* CountlyPersistency+CustomInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B8223B4ACC700F253B7 /* CountlyPersistency+CustomInfo.m */; };
-		E2942B8D23B4ACC700F253B7 /* CountlyDeviceInfo+CustomInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B8323B4ACC700F253B7 /* CountlyDeviceInfo+CustomInfo.m */; };
-		E2942B8E23B4ACC700F253B7 /* CountlyConnectionManager+CustomConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B8723B4ACC700F253B7 /* CountlyConnectionManager+CustomConnection.m */; };
-		E2942B8F23B4ACC700F253B7 /* CountlyEvent+CustomInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E2942B8923B4ACC700F253B7 /* CountlyEvent+CustomInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,33 +36,6 @@
 		E2519F5023B3C0E9000E36DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2942B5623B3E0C800F253B7 /* DataCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCollector.m; sourceTree = "<group>"; };
 		E2942B5723B3E0C800F253B7 /* DataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCollector.h; sourceTree = "<group>"; };
-		E2942B5923B4ACB800F253B7 /* LYCountlyHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCountlyHooker.h; sourceTree = "<group>"; };
-		E2942B5A23B4ACB800F253B7 /* LYCountlyEventDistributionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCountlyEventDistributionProtocol.h; sourceTree = "<group>"; };
-		E2942B5B23B4ACB800F253B7 /* LYCountlyEventDistributor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCountlyEventDistributor.h; sourceTree = "<group>"; };
-		E2942B5C23B4ACB800F253B7 /* LYCountlyEventDistributor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCountlyEventDistributor.m; sourceTree = "<group>"; };
-		E2942B5D23B4ACB800F253B7 /* LYCountlyCustomConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCountlyCustomConfig.m; sourceTree = "<group>"; };
-		E2942B5E23B4ACB800F253B7 /* LYCountlyUIControlAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCountlyUIControlAction.m; sourceTree = "<group>"; };
-		E2942B5F23B4ACB800F253B7 /* UICollectionViewDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewDelegateProxy.m; sourceTree = "<group>"; };
-		E2942B6D23B4ACB900F253B7 /* LYCountlyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCountlyHelper.m; sourceTree = "<group>"; };
-		E2942B6E23B4ACB900F253B7 /* LYCountlyUIControlAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCountlyUIControlAction.h; sourceTree = "<group>"; };
-		E2942B6F23B4ACB900F253B7 /* LYCountlyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCountlyHelper.h; sourceTree = "<group>"; };
-		E2942B7023B4ACB900F253B7 /* LYCountlyCustomConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYCountlyCustomConfig.h; sourceTree = "<group>"; };
-		E2942B7123B4ACB900F253B7 /* UICollectionViewDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewDelegateProxy.h; sourceTree = "<group>"; };
-		E2942B7223B4ACB900F253B7 /* LYCountlyHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYCountlyHooker.m; sourceTree = "<group>"; };
-		E2942B7323B4ACB900F253B7 /* UITableViewDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewDelegateProxy.m; sourceTree = "<group>"; };
-		E2942B7423B4ACB900F253B7 /* UITableViewDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewDelegateProxy.h; sourceTree = "<group>"; };
-		E2942B8023B4ACC700F253B7 /* CountlyCommon+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyCommon+Extension.h"; sourceTree = "<group>"; };
-		E2942B8123B4ACC700F253B7 /* CountlyConsentManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyConsentManager+Extension.h"; sourceTree = "<group>"; };
-		E2942B8223B4ACC700F253B7 /* CountlyPersistency+CustomInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountlyPersistency+CustomInfo.m"; sourceTree = "<group>"; };
-		E2942B8323B4ACC700F253B7 /* CountlyDeviceInfo+CustomInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountlyDeviceInfo+CustomInfo.m"; sourceTree = "<group>"; };
-		E2942B8423B4ACC700F253B7 /* CountlyExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountlyExtensions.h; sourceTree = "<group>"; };
-		E2942B8523B4ACC700F253B7 /* CountlyConnectionManager+CustomConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyConnectionManager+CustomConnection.h"; sourceTree = "<group>"; };
-		E2942B8623B4ACC700F253B7 /* CountlyLocationManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyLocationManager+Extension.h"; sourceTree = "<group>"; };
-		E2942B8723B4ACC700F253B7 /* CountlyConnectionManager+CustomConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountlyConnectionManager+CustomConnection.m"; sourceTree = "<group>"; };
-		E2942B8823B4ACC700F253B7 /* CountlyDeviceInfo+CustomInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyDeviceInfo+CustomInfo.h"; sourceTree = "<group>"; };
-		E2942B8923B4ACC700F253B7 /* CountlyEvent+CustomInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CountlyEvent+CustomInfo.m"; sourceTree = "<group>"; };
-		E2942B8A23B4ACC700F253B7 /* CountlyPersistency+CustomInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyPersistency+CustomInfo.h"; sourceTree = "<group>"; };
-		E2942B8B23B4ACC700F253B7 /* CountlyEvent+CustomInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CountlyEvent+CustomInfo.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +88,6 @@
 		E2519F3D23B3C0E6000E36DC /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				E2519F7F23B3C212000E36DC /* Classes */,
 				E2519F3E23B3C0E6000E36DC /* AppDelegate.h */,
 				E2519F3F23B3C0E6000E36DC /* AppDelegate.m */,
 				E2519F4123B3C0E6000E36DC /* SceneDelegate.h */,
@@ -143,30 +104,6 @@
 			path = Sample;
 			sourceTree = "<group>";
 		};
-		E2519F7F23B3C212000E36DC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				E2942B6023B4ACB900F253B7 /* CountlyExtension */,
-				E2942B7023B4ACB900F253B7 /* LYCountlyCustomConfig.h */,
-				E2942B5D23B4ACB800F253B7 /* LYCountlyCustomConfig.m */,
-				E2942B5A23B4ACB800F253B7 /* LYCountlyEventDistributionProtocol.h */,
-				E2942B5B23B4ACB800F253B7 /* LYCountlyEventDistributor.h */,
-				E2942B5C23B4ACB800F253B7 /* LYCountlyEventDistributor.m */,
-				E2942B6F23B4ACB900F253B7 /* LYCountlyHelper.h */,
-				E2942B6D23B4ACB900F253B7 /* LYCountlyHelper.m */,
-				E2942B5923B4ACB800F253B7 /* LYCountlyHooker.h */,
-				E2942B7223B4ACB900F253B7 /* LYCountlyHooker.m */,
-				E2942B6E23B4ACB900F253B7 /* LYCountlyUIControlAction.h */,
-				E2942B5E23B4ACB800F253B7 /* LYCountlyUIControlAction.m */,
-				E2942B7123B4ACB900F253B7 /* UICollectionViewDelegateProxy.h */,
-				E2942B5F23B4ACB800F253B7 /* UICollectionViewDelegateProxy.m */,
-				E2942B7423B4ACB900F253B7 /* UITableViewDelegateProxy.h */,
-				E2942B7323B4ACB900F253B7 /* UITableViewDelegateProxy.m */,
-			);
-			name = Classes;
-			path = ../../Classes;
-			sourceTree = "<group>";
-		};
 		E2942B5523B3E0C800F253B7 /* AOPCountly */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,25 +111,6 @@
 				E2942B5723B3E0C800F253B7 /* DataCollector.h */,
 			);
 			path = AOPCountly;
-			sourceTree = "<group>";
-		};
-		E2942B6023B4ACB900F253B7 /* CountlyExtension */ = {
-			isa = PBXGroup;
-			children = (
-				E2942B8023B4ACC700F253B7 /* CountlyCommon+Extension.h */,
-				E2942B8523B4ACC700F253B7 /* CountlyConnectionManager+CustomConnection.h */,
-				E2942B8723B4ACC700F253B7 /* CountlyConnectionManager+CustomConnection.m */,
-				E2942B8123B4ACC700F253B7 /* CountlyConsentManager+Extension.h */,
-				E2942B8823B4ACC700F253B7 /* CountlyDeviceInfo+CustomInfo.h */,
-				E2942B8323B4ACC700F253B7 /* CountlyDeviceInfo+CustomInfo.m */,
-				E2942B8B23B4ACC700F253B7 /* CountlyEvent+CustomInfo.h */,
-				E2942B8923B4ACC700F253B7 /* CountlyEvent+CustomInfo.m */,
-				E2942B8423B4ACC700F253B7 /* CountlyExtensions.h */,
-				E2942B8623B4ACC700F253B7 /* CountlyLocationManager+Extension.h */,
-				E2942B8A23B4ACC700F253B7 /* CountlyPersistency+CustomInfo.h */,
-				E2942B8223B4ACC700F253B7 /* CountlyPersistency+CustomInfo.m */,
-			);
-			path = CountlyExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,20 +211,9 @@
 			files = (
 				E2519F4623B3C0E6000E36DC /* ViewController.m in Sources */,
 				E2519F4023B3C0E6000E36DC /* AppDelegate.m in Sources */,
-				E2942B8E23B4ACC700F253B7 /* CountlyConnectionManager+CustomConnection.m in Sources */,
-				E2942B7823B4ACB900F253B7 /* UICollectionViewDelegateProxy.m in Sources */,
-				E2942B7F23B4ACB900F253B7 /* UITableViewDelegateProxy.m in Sources */,
 				E2519F5123B3C0E9000E36DC /* main.m in Sources */,
-				E2942B8F23B4ACC700F253B7 /* CountlyEvent+CustomInfo.m in Sources */,
 				E2519F4323B3C0E6000E36DC /* SceneDelegate.m in Sources */,
-				E2942B7E23B4ACB900F253B7 /* LYCountlyHooker.m in Sources */,
-				E2942B7523B4ACB900F253B7 /* LYCountlyEventDistributor.m in Sources */,
-				E2942B7723B4ACB900F253B7 /* LYCountlyUIControlAction.m in Sources */,
 				E2942B5823B3E0C900F253B7 /* DataCollector.m in Sources */,
-				E2942B8C23B4ACC700F253B7 /* CountlyPersistency+CustomInfo.m in Sources */,
-				E2942B7623B4ACB900F253B7 /* LYCountlyCustomConfig.m in Sources */,
-				E2942B7D23B4ACB900F253B7 /* LYCountlyHelper.m in Sources */,
-				E2942B8D23B4ACC700F253B7 /* CountlyDeviceInfo+CustomInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
