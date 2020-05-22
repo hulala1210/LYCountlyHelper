@@ -9,8 +9,6 @@
 #import "CountlyConnectionManager+CustomConnection.h"
 #import "CountlyExtensions.h"
 #import "CountlyDeviceInfo+CustomInfo.h"
-#import "YYKit.h"
-#import "LYCountlyCustomConfig.h"
 
 static NSString const *kCustomCountlyQSKeyAppKey = @"appKey";
 static NSString const *kCustomCountlyQSKeyAppName = @"appName";
@@ -34,7 +32,6 @@ static NSString const *kCustomCountlyQSKeyUserId = @"userId";
 static NSString const *kCustomCountlyQSKeySeq = @"seq";
 
 //static NSString const *kCustomCountlyQSKeySessionDuration = @"sessionDuration";
-
 
 @interface CountlyConnectionManager ()
 {
