@@ -2,7 +2,7 @@ PODS:
   - Countly (19.08):
     - Countly/NotificationService (= 19.08)
   - Countly/NotificationService (19.08)
-  - LYCountlyHelper (1.0.0):
+  - LYCountlyHelper (1.0.1):
     - Countly (~> 19.08)
     - YYKit
   - YYKit (1.0.9):
@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Countly: 7c596e00a90a35b7978713a384455fe9a18f28aa
-  LYCountlyHelper: bae4c0c564bbb52ef51f385854bf081d3c49ee30
+  LYCountlyHelper: c6ed18d8e807130d3a9cdf8581cd2e5a920d0640
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
 PODFILE CHECKSUM: 363948c88715135ffa24c6409270f48f4a900259
