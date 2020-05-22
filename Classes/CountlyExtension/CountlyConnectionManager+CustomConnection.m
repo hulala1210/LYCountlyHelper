@@ -61,12 +61,17 @@ static NSString const *kCustomCountlyQSKeySeq = @"seq";
 
 - (NSInteger)sessionLengthInSeconds;
 
+- (void)beginSession;
+- (void)updateSession;
+- (void)endSession;
+- (void)proceedOnQueue;
+
 @end
 
 
 @implementation CountlyConnectionManager (CustomConnection)
 
-static void * customConfigKey = "customConfigKey";
+//static void * customConfigKey = "customConfigKey";
 
 #pragma mark - private
 - (NSString *) generateSeq
