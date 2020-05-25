@@ -75,6 +75,7 @@ static void *countlyActionKey = "countlyActionKey";
     countlyAction.targetClassName = NSStringFromClass([target class]);
     countlyAction.targetClass = [target class];
     countlyAction.actionName = NSStringFromSelector(action);
+    countlyAction.action = action;
     countlyAction.events = events;
     
     return countlyAction;

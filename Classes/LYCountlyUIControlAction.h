@@ -11,11 +11,11 @@
 @interface LYCountlyUIControlAction : NSObject
 
 @property (copy, nonatomic) NSString *targetClassName;
-@property (copy, nonatomic) Class targetClass;
+@property (unsafe_unretained, nonatomic) Class targetClass;
 
 @property (copy, nonatomic) NSString *actionName;
+@property (unsafe_unretained, nonatomic) SEL action;
 
-//@property (copy, nonatomic) NSString *action;
 @property (unsafe_unretained, nonatomic) UIControlEvents events;
 
 - (void)receiveActionWithSender:(id)sender;
