@@ -10,8 +10,12 @@
 
 @interface LYCountlyUIControlAction : NSObject
 
-@property (copy, nonatomic) NSString *targetName;
-@property (copy, nonatomic) NSString *action;
+@property (copy, nonatomic) NSString *targetClassName;
+@property (copy, nonatomic) Class targetClass;
+
+@property (copy, nonatomic) NSString *actionName;
+
+//@property (copy, nonatomic) NSString *action;
 @property (unsafe_unretained, nonatomic) UIControlEvents events;
 
 - (void)receiveActionWithSender:(id)sender;

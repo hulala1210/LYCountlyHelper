@@ -70,6 +70,16 @@ static void *countlyActionKey = "countlyActionKey";
 
 @implementation UIControl (ActionHook)
 
+- (LYCountlyUIControlAction *)createCountlyWithTarget:(id)target action:(SEL)action controlEvents:(UIControlEvents)events {
+    LYCountlyUIControlAction *countlyAction = [[LYCountlyUIControlAction alloc] init];
+    countlyAction.targetClassName = NSStringFromClass([target class]);
+    countlyAction.targetClass = [target class];
+    countlyAction.actionName = NSStringFromSelector(action);
+    countlyAction.events = events;
+    
+    return countlyAction;
+}
+
 - (NSMutableSet <LYCountlyUIControlAction *>*)countlyActionSet {
     return (NSMutableSet <LYCountlyUIControlAction *> *)[self getAssociatedValueForKey:&countlyActionKey];
 }
@@ -95,10 +105,7 @@ static void *countlyActionKey = "countlyActionKey";
 
 - (void)countlyHook_addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)events {
     
-    LYCountlyUIControlAction *countlyAction = [[LYCountlyUIControlAction alloc] init];
-    countlyAction.targetName = NSStringFromClass([target class]);
-    countlyAction.action = NSStringFromSelector(action);
-    countlyAction.events = events;
+    LYCountlyUIControlAction *countlyAction = [self createCountlyWithTarget:target action:action controlEvents:events];
     [self addCountlyAction:countlyAction];
     
     [self countlyHook_addTarget:countlyAction action:@selector(receiveActionWithSender:) forControlEvents:events];
@@ -109,10 +116,7 @@ static void *countlyActionKey = "countlyActionKey";
     if (!self.countlyActionSet) {
         self.countlyActionSet = [[NSMutableSet alloc] init];
     }
-    LYCountlyUIControlAction *countlyAction = [[LYCountlyUIControlAction alloc] init];
-    countlyAction.targetName = NSStringFromClass([target class]);
-    countlyAction.action = NSStringFromSelector(action);
-    countlyAction.events = controlEvents;
+    LYCountlyUIControlAction *countlyAction = [self createCountlyWithTarget:target action:action controlEvents:controlEvents];
     [self removeCountlyAction:countlyAction];
 
     [self countlyHook_removeTarget:countlyAction action:@selector(receiveActionWithSender:) forControlEvents:controlEvents];

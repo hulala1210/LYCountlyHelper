@@ -16,7 +16,7 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"LYCountlyUIControlAction targetName = %@, action = %@, events = %@",self.targetName, self.action, @(self.events)];
+    return [NSString stringWithFormat:@"LYCountlyUIControlAction targetClassName = %@, actionName = %@, events = %@",self.targetClassName, self.actionName, @(self.events)];
 }
 
 @end
