@@ -31,7 +31,7 @@
 
 + (void)recordEvent:(NSString *)key duration:(NSTimeInterval)duration;
 
- (void)startEvent:(NSString *)key;
++ (void)startEvent:(NSString *)key;
 
 + (void)endEvent:(NSString *)key;
 
