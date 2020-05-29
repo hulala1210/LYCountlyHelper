@@ -81,6 +81,22 @@
     [[Countly sharedInstance] recordEvent:key duration:duration];
 }
 
++ (void)startEvent:(NSString *)key {
+    [[Countly sharedInstance] startEvent:key];
+}
+
++ (void)endEvent:(NSString *)key {
+    [[Countly sharedInstance] endEvent:key];
+}
+
++ (void)endEvent:(NSString *)key segmentation:(NSDictionary<NSString *, NSString *> * _Nullable)segmentation count:(NSUInteger)count sum:(double)sum {
+    [[Countly sharedInstance] endEvent:key segmentation:segmentation count:count sum:sum];
+}
+
++ (void)cancelEvent:(NSString *)key {
+    [[Countly sharedInstance] cancelEvent:key];
+}
+
 + (void)recordEvent:(NSString *)key count:(NSUInteger)count sum:(double)sum
 {
     [[Countly sharedInstance] recordEvent:key count:count sum:sum];

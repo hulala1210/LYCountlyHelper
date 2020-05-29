@@ -31,6 +31,14 @@
 
 + (void)recordEvent:(NSString *)key duration:(NSTimeInterval)duration;
 
+ (void)startEvent:(NSString *)key;
+
++ (void)endEvent:(NSString *)key;
+
++ (void)endEvent:(NSString *)key segmentation:(NSDictionary<NSString *, NSString *> * _Nullable)segmentation count:(NSUInteger)count sum:(double)sum;
+
++ (void)cancelEvent:(NSString *)key;
+
 + (void)recordEvent:(NSString *)key count:(NSUInteger)count sum:(double)sum;
 
 + (void)recordEvent:(NSString *)key segmentation:(NSDictionary *)segmentation;
