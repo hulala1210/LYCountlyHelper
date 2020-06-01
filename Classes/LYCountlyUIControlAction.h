@@ -16,6 +16,8 @@
 @property (copy, nonatomic) NSString *actionName;
 @property (unsafe_unretained, nonatomic) SEL action;
 
+@property (weak, nonatomic) UIControl *sender;
+
 @property (unsafe_unretained, nonatomic) UIControlEvents events;
 
 - (void)receiveActionWithSender:(id)sender;

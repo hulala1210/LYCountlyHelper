@@ -70,13 +70,15 @@ static void *countlyActionKey = "countlyActionKey";
 
 @implementation UIControl (ActionHook)
 
-- (LYCountlyUIControlAction *)createCountlyWithTarget:(id)target action:(SEL)action controlEvents:(UIControlEvents)events {
+- (LYCountlyUIControlAction *)createCountlyWithTarget:(id)target action:(SEL)action sender:(UIControl *)sender controlEvents:(UIControlEvents)events {
     LYCountlyUIControlAction *countlyAction = [[LYCountlyUIControlAction alloc] init];
     countlyAction.targetClassName = NSStringFromClass([target class]);
     countlyAction.targetClass = [target class];
     countlyAction.actionName = NSStringFromSelector(action);
     countlyAction.action = action;
     countlyAction.events = events;
+    
+    countlyAction.sender = sender;
     
     return countlyAction;
 }
@@ -106,7 +108,7 @@ static void *countlyActionKey = "countlyActionKey";
 
 - (void)countlyHook_addTarget:(id)target action:(SEL)action forControlEvents:(UIControlEvents)events {
     
-    LYCountlyUIControlAction *countlyAction = [self createCountlyWithTarget:target action:action controlEvents:events];
+    LYCountlyUIControlAction *countlyAction = [self createCountlyWithTarget:target action:action sender:self controlEvents:events];
     [self addCountlyAction:countlyAction];
     
     [self countlyHook_addTarget:countlyAction action:@selector(receiveActionWithSender:) forControlEvents:events];
@@ -117,7 +119,7 @@ static void *countlyActionKey = "countlyActionKey";
     if (!self.countlyActionSet) {
         self.countlyActionSet = [[NSMutableSet alloc] init];
     }
-    LYCountlyUIControlAction *countlyAction = [self createCountlyWithTarget:target action:action controlEvents:controlEvents];
+    LYCountlyUIControlAction *countlyAction = [self createCountlyWithTarget:target action:action sender:self controlEvents:controlEvents];
     [self removeCountlyAction:countlyAction];
 
     [self countlyHook_removeTarget:countlyAction action:@selector(receiveActionWithSender:) forControlEvents:controlEvents];
