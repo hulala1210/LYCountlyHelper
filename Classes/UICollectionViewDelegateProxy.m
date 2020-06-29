@@ -60,7 +60,16 @@
 }
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)sel {
-    NSMethodSignature *methodSignature = [_delegate methodSignatureForSelector:sel];
+    NSMethodSignature *methodSignature = nil;
+    
+    // 如果delegate被释放了，也就是delegate为nil，也要允许delegate继续执行方法
+    if (_delegate == nil) {
+        methodSignature = [NSObject instanceMethodSignatureForSelector:@selector(class)];
+    }
+    else {
+        methodSignature = [_delegate methodSignatureForSelector:sel];
+    }
+    
     return methodSignature;
 }
 
