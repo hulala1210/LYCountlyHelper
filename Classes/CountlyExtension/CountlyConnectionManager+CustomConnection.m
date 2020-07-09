@@ -34,11 +34,16 @@ static NSString const *kCustomCountlyQSKeySeq = @"seq";
 //static NSString const *kCustomCountlyQSKeySessionDuration = @"sessionDuration";
 
 @interface CountlyConnectionManager ()
-{
-    NSTimeInterval unsentSessionLength;
-    NSTimeInterval lastSessionStartTime;
-    BOOL isCrashing;
-}
+//{
+//    NSTimeInterval unsentSessionLength;
+//    NSTimeInterval lastSessionStartTime;
+//    BOOL isCrashing;
+//}
+
+// 以下三个属性是Countly原类中的私有变量，我们改成属性通过KVC来访问。
+@property (nonatomic) NSTimeInterval customUnsentSessionLength;
+@property (nonatomic) NSTimeInterval customLastSessionStartTime;
+@property (nonatomic) BOOL customIsCrashing;
 
 @property (nonatomic) NSString* appKey;
 @property (nonatomic) NSString* host;
@@ -69,6 +74,30 @@ static NSString const *kCustomCountlyQSKeySeq = @"seq";
 @implementation CountlyConnectionManager (CustomConnection)
 
 //static void * customConfigKey = "customConfigKey";
+
+- (NSTimeInterval)customUnsentSessionLength {
+    return (NSTimeInterval)[[self valueForKey:@"unsentSessionLength"] doubleValue];
+}
+
+- (void)setCustomUnsentSessionLength:(NSTimeInterval)customUnsentSessionLength {
+    [self setValue:@(customUnsentSessionLength) forKey:@"unsentSessionLength"];
+}
+
+- (NSTimeInterval)customLastSessionStartTime {
+    return (NSTimeInterval)[[self valueForKey:@"lastSessionStartTime"] doubleValue];
+}
+
+- (void)setCustomLastSessionStartTime:(NSTimeInterval)customLastSessionStartTime{
+    [self setValue:@(customLastSessionStartTime) forKey:@"lastSessionStartTime"];
+}
+
+- (BOOL)customIsCrashing {
+    return [[self valueForKey:@"isCrashing"] boolValue];
+}
+
+- (void)setCustomIsCrashing:(BOOL)customIsCrashing {
+    [self setValue:@(customIsCrashing) forKey:@"isCrashing"];
+}
 
 #pragma mark - private
 - (NSString *) generateSeq
@@ -107,7 +136,7 @@ static NSString const *kCustomCountlyQSKeySeq = @"seq";
         return;
     }
 
-    if (isCrashing)
+    if (self.customIsCrashing)
     {
         COUNTLY_LOG(@"Proceeding on queue is aborted: Application is crashing!");
         return;
@@ -245,8 +274,8 @@ static NSString const *kCustomCountlyQSKeySeq = @"seq";
     if (!CountlyConsentManager.sharedInstance.consentForSessions)
         return;
 
-    lastSessionStartTime = NSDate.date.timeIntervalSince1970;
-    unsentSessionLength = 0.0;
+    self.customLastSessionStartTime = NSDate.date.timeIntervalSince1970;
+    self.customUnsentSessionLength = 0.0;
 
     NSDictionary *metricsDetail = [CountlyDeviceInfo metrics];
 
